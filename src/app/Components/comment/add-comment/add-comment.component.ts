@@ -4,10 +4,10 @@ import { CommentService } from 'src/app/Services/comment.service';
 
 @Component({
   selector: 'app-comment',
-  templateUrl: './comment.component.html',
-  styleUrls: ['./comment.component.scss']
+  templateUrl: './add-comment.component.html',
+  styleUrls: ['./add-comment.component.scss']
 })
-export class CommentComponent implements OnInit {
+export class AddCommentComponent implements OnInit {
 
   @Input() comments! : Comment[];
   @Input() post_id! : number;

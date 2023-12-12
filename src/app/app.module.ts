@@ -4,23 +4,31 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ContactComponent } from './Interfaces/contact/contact.component';
-import { PostDetailsComponent } from './Interfaces/post/post-details/post-details.component';
-import { GetPostsComponent } from './Interfaces/post/get-posts/get-posts.component';
-import { HomeComponent } from './Interfaces/home/home.component';
-import { AddPostComponent } from './Interfaces/post/add-post/add-post.component';
-import { CommentComponent } from './Interfaces/comment/comment/comment.component';
+import { ContactFormComponent } from './Components/contact-form/contact-form.component';
+import { PostDetailsComponent } from './Components/post/post-details/post-details.component';
+import { GetPostsComponent } from './Components/post/get-posts/get-posts.component';
+import { AddPostComponent } from './Components/post/add-post/add-post.component';
+import { AddCommentComponent } from './Components/comment/add-comment/add-comment.component';
+import { GetCommentsComponent } from './Components/comment/get-comments/get-comments.component';
+import { NavbarComponent } from './Components/navbar/navbar.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { PostsTemplatesComponent } from './Pages/posts-templates/posts-templates.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent,
+    ContactFormComponent,
     PostDetailsComponent,
     GetPostsComponent,
-    HomeComponent,
     AddPostComponent,
-    CommentComponent
+    AddCommentComponent,
+    GetCommentsComponent,
+    NavbarComponent,
+    FooterComponent,
+    HomeComponent,
+    PostsTemplatesComponent,
   ],
   imports: [
     BrowserModule,
